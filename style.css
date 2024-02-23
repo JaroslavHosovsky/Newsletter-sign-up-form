@@ -1,0 +1,168 @@
+/* === COLORS === */
+/* === FONTS === */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  max-width: 375px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+}
+main .image-section .image2 {
+  display: none;
+}
+main .form-section {
+  padding: 30px 20px;
+}
+main .form-section h1 {
+  font-size: 34px;
+  color: hsl(234, 29%, 20%);
+  padding-bottom: 15px;
+}
+main .form-section p {
+  color: hsl(234, 29%, 20%);
+}
+main .form-section .service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 0 45px 0;
+  row-gap: 10px;
+}
+main .form-section .service-container .individual-service {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  color: hsl(234, 29%, 20%);
+}
+main .form-section .service-container .individual-service img {
+  width: 20px;
+}
+main .form-section form {
+  display: flex;
+  flex-direction: column;
+}
+main .form-section form label {
+  padding-bottom: 8px;
+  font-size: 12px;
+  color: hsl(234, 29%, 20%);
+  font-weight: bold;
+}
+main .form-section form input[type=email] {
+  outline: none;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid hsl(231, 7%, 60%);
+  color: hsl(231, 7%, 60%);
+  font-weight: 500;
+}
+main .form-section input[type=submit] {
+  outline: none;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+main .form-section input[type=submit]:hover {
+  background: linear-gradient(41deg, rgb(255, 83, 119) 0%, rgb(255, 104, 65) 79%);
+}
+main .success-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  display: none;
+}
+main .success-section img {
+  width: 55px;
+  margin-bottom: 35px;
+}
+main .success-section h2 {
+  color: hsl(234, 29%, 20%);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+main .success-section p {
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 245px;
+}
+main .success-section button {
+  outline: none;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  padding: 20px;
+  align-content: end;
+  width: 100%;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+main .success-section button:hover {
+  background: linear-gradient(41deg, rgb(255, 83, 119) 0%, rgb(255, 104, 65) 79%);
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: hsl(234, 29%, 20%);
+  }
+  main {
+    border-radius: 15px;
+  }
+  main .image-section img {
+    border-radius: 15px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main {
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    padding: 25px;
+  }
+  main .image-section {
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+  }
+  main .image-section .image1 {
+    display: none;
+  }
+  main .image-section .image2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  main .form-section {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    width: 100%;
+  }
+  main .form-section h1 {
+    font-size: 45px;
+  }
+}/*# sourceMappingURL=style.css.map */
