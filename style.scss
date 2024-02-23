@@ -52,6 +52,17 @@ main {
     form {
       display: flex;
       flex-direction: column;
+      position: relative;
+
+      .label-text {
+        position: absolute;
+        font-size: 12px;
+        font-weight: bold;
+        color: $primary_tomato;
+        top: 0;
+        right: 0;
+        display: none;
+      }
 
       label {
         padding-bottom: 8px;
@@ -67,7 +78,16 @@ main {
         color: $neutral_grey;
         font-weight: 500;
       }
+
+      .error-message {
+        border: 1px solid $primary_tomato !important;
+        background-color: hsla(4, 100%, 67%, 0.168);
+        &::placeholder {
+          color: $primary_tomato;
+        }
+      }
     }
+
     input[type="submit"] {
       @include inputStyle;
       border: none;
@@ -76,7 +96,6 @@ main {
       font-weight: bold;
 
       &:hover {
-        //   background: rgb(255, 83, 119);
         background: linear-gradient(
           41deg,
           rgba(255, 83, 119, 1) 0%,
@@ -109,6 +128,10 @@ main {
     p {
       color: $neutral_dark_slate_grey;
       margin-bottom: 245px;
+
+      span {
+        font-weight: bold;
+      }
     }
 
     button {
@@ -122,7 +145,6 @@ main {
       font-weight: bold;
 
       &:hover {
-        //   background: rgb(255, 83, 119);
         background: linear-gradient(
           41deg,
           rgba(255, 83, 119, 1) 0%,
@@ -184,6 +206,34 @@ main {
 
       h1 {
         font-size: 45px;
+      }
+    }
+
+    .success-section {
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px;
+      display: none;
+
+      grid-column: 2;
+
+      img {
+        width: 55px;
+        margin-bottom: 35px;
+      }
+
+      h2 {
+        color: $neutral_dark_slate_grey;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $neutral_dark_slate_grey;
+        margin-bottom: 45px;
       }
     }
   }

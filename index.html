@@ -56,6 +56,7 @@
         </div>
 
         <form>
+          <div class="label-text">Valid email required</div>
           <label for="email">Email address</label>
           <input
             type="email"
@@ -66,7 +67,11 @@
             autofocus
             autocomplete="on"
           />
-          <input type="submit" value="Subscribe to monthly newsletter" />
+          <input
+            type="submit"
+            id="submit"
+            value="Subscribe to monthly newsletter"
+          />
         </form>
       </section>
 
@@ -77,10 +82,11 @@
         />
         <h2>Thanks for subscribing!</h2>
         <p>
-          A confirmation email has been sent to ash@loremcompany.com. Please
-          open it and click the button inside to confirm your subscription.
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com</span> . Please open it and click the
+          button inside to confirm your subscription.
         </p>
-        <button type="submit">Dismiss message</button>
+        <button type="submit" id="dismiss-button">Dismiss message</button>
       </section>
     </main>
 

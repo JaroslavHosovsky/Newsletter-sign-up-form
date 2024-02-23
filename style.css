@@ -50,6 +50,16 @@ main .form-section .service-container .individual-service img {
 main .form-section form {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+main .form-section form .label-text {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(4, 100%, 67%);
+  top: 0;
+  right: 0;
+  display: none;
 }
 main .form-section form label {
   padding-bottom: 8px;
@@ -66,6 +76,16 @@ main .form-section form input[type=email] {
   border: 1px solid hsl(231, 7%, 60%);
   color: hsl(231, 7%, 60%);
   font-weight: 500;
+}
+main .form-section form .error-message {
+  border: 1px solid hsl(4, 100%, 67%) !important;
+  background-color: hsla(4, 100%, 67%, 0.168);
+}
+main .form-section form .error-message::-moz-placeholder {
+  color: hsl(4, 100%, 67%);
+}
+main .form-section form .error-message::placeholder {
+  color: hsl(4, 100%, 67%);
 }
 main .form-section input[type=submit] {
   outline: none;
@@ -101,6 +121,9 @@ main .success-section h2 {
 main .success-section p {
   color: hsl(234, 29%, 20%);
   margin-bottom: 245px;
+}
+main .success-section p span {
+  font-weight: bold;
 }
 main .success-section button {
   outline: none;
@@ -164,5 +187,28 @@ main .success-section button:hover {
   }
   main .form-section h1 {
     font-size: 45px;
+  }
+  main .success-section {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    display: none;
+    grid-column: 2;
+  }
+  main .success-section img {
+    width: 55px;
+    margin-bottom: 35px;
+  }
+  main .success-section h2 {
+    color: hsl(234, 29%, 20%);
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  main .success-section p {
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 45px;
   }
 }/*# sourceMappingURL=style.css.map */
